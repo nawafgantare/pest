@@ -6,8 +6,9 @@ define('APP_EMAIL', 'info@shaktipestcontrol.com');
 define('APP_PHONE', '+91 86594 54862');
 define('APP_ADDRESS', '520, West Valley, Vashi, Navi Mumbai, Maharashtra');
 
-// Database Configuration
-define('DB_FILE', __DIR__ . '/database/leads.sqlite');
+// Database Configuration - Use /tmp/ on Vercel Serverless environment where root filesystem is read-only
+$isVercel = !empty($_ENV['VERCEL']) || !empty($_SERVER['VERCEL']) || getenv('VERCEL');
+define('DB_FILE', $isVercel ? '/tmp/leads.sqlite' : __DIR__ . '/database/leads.sqlite');
 
 // SMTP Configuration
 define('SMTP_HOST', 'smtp.gmail.com');

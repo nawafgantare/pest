@@ -5,7 +5,7 @@ require_once __DIR__ . '/includes/header.php';
 ?>
 
 <!-- Hero Banner -->
-<section style="background: linear-gradient(rgba(26, 37, 48, 0.82), rgba(26, 37, 48, 0.82)), url('assets/images/hero-bg.png') center/cover no-repeat; color: white; padding: 90px 0;">
+<section style="background: linear-gradient(135deg, rgba(26, 37, 48, 0.96) 0%, rgba(158, 27, 30, 0.85) 100%), url('assets/images/hero-bg.png') center/cover no-repeat; color: white; padding: 90px 0;">
     <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: center;">
         <div>
             <span style="background: var(--color-primary); color: white; padding: 4px 12px; border-radius: 4px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Trusted Since 1983</span>
